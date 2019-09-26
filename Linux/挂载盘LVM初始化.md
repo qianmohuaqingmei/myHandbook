@@ -20,8 +20,6 @@ or
 # mkfs.ext4 /dev/vdb1
 or
 # mkfs.xfs /dev/vdb1
-or
-# mkfs.btrfs /dev/vdb1
 ```
 
 #### 4 创建挂载目录
@@ -45,3 +43,13 @@ or
 or
 # echo "/dev/vdb1  /opt/duzi ext4 defaults 0 0" >>/etc/fstab
 ```
+
+附录
+
+##### 查看磁盘分区的UUID
+
+```bash
+# ls -l /dev/disk/by-uuid/
+```
+
+
